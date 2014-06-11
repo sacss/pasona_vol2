@@ -1,0 +1,7 @@
+.DS_Store
+Gemfile.lock
+.cache
+.sass-cache
+.~lock*
+node_modules
+Thumbs.db

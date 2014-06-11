@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="css/styles.css" />
+<body>
+  <header class="l-header">
+    <div class="l-inner">
+      <h1>{{ page.title }}</h1>
+      {% if page.category != 'top' %}
+      <ul>
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      {% endif %}
+    </div>
+  </header>
+  <section class="l-main">
+    <div class="l-inner">
+
+{{ content }}
+
+    </div>
+  </section>
+<script src="js/all.js"></script>
+</body>
+</html>

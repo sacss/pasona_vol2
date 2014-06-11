@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8" />
-<title>CSS DEMO</title>
-<link rel="stylesheet" href="css/styles.css" />
-<body>
-  <header class="l-header">
-    <div class="l-inner">
-      <h1>CSS DEMO</h1>
-      
-    </div>
-  </header>
-  <section class="l-main">
-    <div class="l-inner">
+---
+layout: default
+title: CSS DEMO
+category: top
+---
 
 <ul class="mod-list">
-
-  <li><a href="basic01.html">SELECTORS DEMO：E</a></li>
-
-  <li><a href="index.html">CSS DEMO</a></li>
-
+{% for item in site.pages %}
+  <li><a href="{{ item.path }}">{{ item.title }}</a></li>
+{% endfor %}
 </ul>
 
 <!-- <!DOCTYPE html>
@@ -125,10 +113,3 @@
 	</ul>
 </section>
 </div> -->
-
-
-    </div>
-  </section>
-<script src="js/all.js"></script>
-</body>
-</html>

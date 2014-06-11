@@ -2,23 +2,24 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<title>SELECTORS DEMO：E</title>
-<link rel="stylesheet" href="css/styles.css" />
+<title>BASIC DEMO 02</title>
+<link rel="stylesheet" href="common/css/styles.css" />
+<script src="common/js/jquery-1.8.2.min.js"></script>
+<script src="common/js/function.js"></script>
 <body>
-  <header class="l-header">
-    <div class="l-inner">
-      <h1>SELECTORS DEMO：E</h1>
-      
-      <ul>
-        <li><a href="../">一覧に戻る</a></li>
-      </ul>
-      
-    </div>
-  </header>
-  <section class="l-main">
-    <div class="l-inner">
+<header>
+<div>
+<h1><a href="./">BASIC DEMO 02</a></h1>
+<ul>
+<li><a href="basic01.html">PREV</a></li>
+<li><a href="basic03.html">NEXT</a></li>
+</ul>
+</div>
+</header>
 
-<h2>E （Type selectors）</h2>
+<div id="container">
+
+<h2 class="active">E F （Descendant selectors）</h2>
 
 <section>
 <h3>HTML</h3>
@@ -33,7 +34,7 @@
 
 <section>
 <h3>CSS</h3>
-<pre><code id="cssCode">h3 {
+<pre><code id="cssCode">.demo h3 {
 &nbsp;&nbsp;&nbsp;&nbsp;background:#ff0000;
 }</code></pre>
 </section>
@@ -54,8 +55,7 @@
 </div>
 </section>
 
-    </div>
-  </section>
-<script src="js/all.js"></script>
+</div>
+
 </body>
 </html>
