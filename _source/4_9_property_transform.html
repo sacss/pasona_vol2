@@ -1,0 +1,36 @@
+---
+layout: default
+title: CSS3 PROPERTY DEMO：transform
+categories: css3property
+---
+
+<h2 class="active">変形（transform）</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo div{
+&nbsp;&nbsp;&nbsp;&nbsp;transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-transform: rotate(10deg);
+&nbsp;&nbsp;&nbsp;&nbsp;/*transform:rotate(deg)	回転
+&nbsp;&nbsp;&nbsp;&nbsp;transform:scale(xy[x,y])	拡大・縮小
+&nbsp;&nbsp;&nbsp;&nbsp;transform:skew(deg)	X軸，Y軸へのゆがみ）
+&nbsp;&nbsp;&nbsp;&nbsp;transform:translate(xy[x,y])	移動*/
+&nbsp;&nbsp;&nbsp;&nbsp;/*transform-origin: 0 0;　基準位置*/
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo" style="height: 400px;">
+<div style="width: 500px; height: 200px; background-color: #06F;margin: 100px auto;"></div>
+</div>
+</section>

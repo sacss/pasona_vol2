@@ -26,7 +26,7 @@ a {
   left: 0;
   background-color: #16a085;
   margin: 0 0 30px 0;
-  padding:15px;
+  padding: 15px 0;
 
   h1 {
     float:left;
@@ -47,14 +47,14 @@ a {
     display: inline;
     margin: 0 0 0 10px;
   }
-  
+
   a {
     &:link, &:visited {
       color: #fff;
       text-decoration: none;
     }
 
-    &:hover, &:avtive {
+    &:hover, &:active {
       color: #fff;
       text-decoration: none;
       opacity: 0.6;
@@ -63,35 +63,33 @@ a {
 }
 
 .l-inner {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .l-main{
-  width: 960px;
-  margin: 105px auto 50px;
+  margin: 135px auto 50px;
   color: #333;
+}
 
-  .top{
-    font-size: 480%;
-    margin: 0 0 30px 0;
-  }
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 50px 0;
+  padding: 10px 10px 10px 20px;
+  border: 3px solid #ccc;
+  background-color: #FFF;
+}
 
-  h2{
-    font-size: 24px;
-    color:#333;
-    margin: 0 0 50px 0;
-    padding:10px 10px 10px 20px;
-    border: 3px solid #ccc;
-    background-color: #FFF;
-  }
+h3 {
+  font-size: 24px;
+  margin: 30px 0 10px 0;
+}
 
-  h3{
-    font-size: 24px;
-    margin: 30px 0 10px 0;
-  }
-
+.mod-list-head {
+  margin: 0;
 }
 
 #demoTitle{
@@ -100,11 +98,24 @@ a {
 }
 
 .mod-list {
-  margin: 0 0 50px 30px;
+  margin: 0 0 50px 0;
+  padding: 30px;
+  border: solid #ccc;
+  border-width: 0 3px 3px 3px;
 
   li {
     font-size: 30px;
-    margin: 0 0 10px 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+
+    a {
+      display: block;
+      padding: 0 10px;
+    }
+
+    &:first-child {
+      border-top: 1px solid #ccc;
+    }
   }
 }
 
@@ -117,7 +128,7 @@ button{
 }
 
 .demo{
-  border: 5px solid #ccc;
+  border: 3px solid #ccc;
   padding: 10px;
   background: #fff;
   overflow: auto;
@@ -141,7 +152,7 @@ button{
   .box{
     display: box;
     display: -webkit-box;
-    display: -moz-box; 
+    display: -moz-box;
   }
 
   .column3 {
@@ -154,7 +165,7 @@ button{
     border-left: 3px solid #ccc;
     border-collapse:collapse;
   }
-  
+
   td{
     border-right: 3px solid #ccc;
     border-bottom: 3px solid #ccc;
@@ -165,12 +176,12 @@ button{
   }
 
   .sampleBox{
-    background:#ff1493;
-    width:200px;
-    height:200px;
-    position:absolute;
-    top:50px;
-    left:15px;
+    background: #ff1493;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 15px;
   }
 }
 
@@ -192,9 +203,9 @@ pre {
     font-family:monospace;
     width: 100%;
     font-size: 24px;
-    border:0;
+    border: 0;
     background-color: #444;
-    color:#FFF;
+    color: #FFF;
     line-height: 1.5;
     vertical-align: bottom;
     padding: 10px;

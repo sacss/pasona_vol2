@@ -76,7 +76,7 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ['_source/**/*.html'],
-        tasks: ['jekyll:dev']
+        tasks: ['jekyll:dev', 'compass', 'autoprefixer', 'uglify']
       },
       css: {
         files: ['_source/**/*.scss'],

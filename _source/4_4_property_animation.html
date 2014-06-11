@@ -1,0 +1,51 @@
+---
+layout: default
+title: CSS3 PROPERTY DEMO：animation
+categories: css3property
+---
+
+<h2 class="active">animation</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">@-webkit-keyframes sample{
+	0%{left:15px;}
+	25%{left:600px;}
+	50%{left:200px;-webkit-transform:rotate(360deg);}
+	100%{left:720px;}
+}
+@-moz-keyframes sample{
+	0%{left:15px;}
+	25%{left:600px;}
+	50%{left:200px;-moz-transform:rotate(360deg);}
+	100%{left:720px;}
+}
+.demo div{
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-name:sample;
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-duration:3s;
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-timing-function:linear;
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-iteration-count:2;
+&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-direction:alternate; /*normal*/
+
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-animation-name:sample;
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-animation-duration:3s;
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-animation-timing-function:linear;
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-animation-iteration-count:2;
+&nbsp;&nbsp;&nbsp;&nbsp;-moz-animation-direction:alternate; /*normal*/
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo" style="position:relative;height:300px;">
+<div class="sampleBox">サンプルボックス</div>
+</div>
+</section>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS3 SELECTORS DEMO：empty</title>
+<link rel="stylesheet" href="css/styles.css" />
+<body>
+  <header class="l-header">
+    <div class="l-inner">
+      <h1>CSS3 SELECTORS DEMO：empty</h1>
+      
+      <ul>
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div>
+  </header>
+  <section class="l-main">
+    <div class="l-inner">
+
+<h2 class="active">E:empty</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo td:empty{
+&nbsp;&nbsp;&nbsp;&nbsp;text-align:center;
+&nbsp;&nbsp;&nbsp;&nbsp;color:#ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color:#ff0000;
+}
+.demo td:empty:after{
+&nbsp;&nbsp;&nbsp;&nbsp;content:"enpty";
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<table>
+<tr>
+<td>ダミーテキスト</td>
+<td>ダミーテキスト</td>
+<td>ダミーテキスト</td>
+<td>ダミーテキスト</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>ダミーテキスト</td>
+<td>ダミーテキスト</td>
+<td></td>
+<td>ダミーテキスト</td>
+</tr>
+<tr>
+<td>ダミーテキスト</td>
+<td></td>
+<td>ダミーテキスト</td>
+<td></td>
+<td>ダミーテキスト</td>
+</tr>
+<tr>
+<td>ダミーテキスト</td>
+<td>ダミーテキスト</td>
+<td></td>
+<td>ダミーテキスト</td>
+<td></td>
+</tr>
+</table>
+</div>
+</section>
+
+    </div>
+  </section>
+<script src="js/all.js"></script>
+</body>
+</html>

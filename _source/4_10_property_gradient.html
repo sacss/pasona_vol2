@@ -1,0 +1,29 @@
+---
+layout: default
+title: CSS3 PROPERTY DEMO：gradient
+categories: css3property
+---
+
+<h2 class="active">背景：グラデーション（gradient）</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo div{
+&nbsp;&nbsp;&nbsp;&nbsp;background: -webkit-gradient(linear,left top,left bottom, color-stop(0%, #ff0000),color-stop(50%, #000000), color-stop(100%, #0000ff));
+&nbsp;&nbsp;&nbsp;&nbsp;background: -moz-linear-gradient(top, #ff0000, #000000 50%, #0000ff 100%);</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo" style="height: 400px;">
+<div style="width: 500px; height: 300px; background-color: #ccc;margin: 50px auto;"></div>
+</div>
+</section>
