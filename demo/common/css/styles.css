@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+body{
+	font-size: 62.5%;
+}
+
+header{
+	background:#222222;
+	margin: 0 0 30px 0;
+	padding:15px;
+	-webkit-box-shadow: 2px 2px 5px #cccccc;
+	-moz-box-shadow: -5px 2px 5px #cccccc;
+}
+header div{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header h1{
+	float:left;
+	font-size:360%;
+	text-shadow: 1px 1px 2px #cccccc;
+	color:#ffffff;
+}
+header h1 a:link{color:#ffffff;text-decoration:none;}
+header h1 a:visited{color:#ffffff;text-decoration:none;}
+header h1 a:hover{color:#ffffff;text-decoration:none;opacity:0.6;}
+header h1 a:avtive{color:#ffffff;text-decoration:none;opacity:0.6;}
+
+header ul{
+	font-size:240%;
+	float:right;
+	color:#ffffff;
+	list-style-type:none;
+}
+header ul li{
+	display: inline;
+	margin: 0 0 0 10px;
+}
+header ul a:link{color:#ffffff;text-decoration:none;}
+header ul a:visited{color:#ffffff;text-decoration:none;}
+header ul a:hover{color:#ffffff;text-decoration:none;opacity:0.6;}
+header ul a:avtive{color:#ffffff;text-decoration:none;opacity:0.6;}
+#container{
+	width: 960px;
+	margin: 0 auto 50px;
+	color:#202020;
+}
+h1.top{
+	font-size: 480%;
+	margin: 0 0 30px 0;
+	text-shadow: 1px 1px 1px #ccc;
+}
+h2{
+	font-size:480%;
+	color:#202020;
+	margin: 0 0 50px 0;
+	padding:10px 10px 10px 20px;
+	border-top: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	border-bottom: 3px solid #222222;
+	border-left: 10px solid #222222;
+	background-color: #FFFFFF;
+	text-shadow: 1px 1px 1px #ccc;
+	-webkit-box-shadow: 0px 4px 5px #cccccc;
+	-moz-box-shadow: 0px 5px 5px #cccccc;
+}
+h3{
+	font-size:320%;
+	text-shadow: 1px 1px 2px #cccccc;
+	margin: 30px 0 10px 0;
+}
+h3#demoTitle{
+	margin:10px 30px 0 0;
+}
+ul.topItem{
+	margin: 0 0 50px 30px;
+}
+ul.topItem li{
+	font-size:240%;
+	margin: 0 0 10px 0;
+}
+ul.topItem li a:link{color:#222222;text-decoration:none;}
+ul.topItem li a:visited{color:#222222;text-decoration:none;}
+ul.topItem li a:hover{color:#ffffff;text-decoration:none;background-color:#ff1493;}
+ul.topItem li a:active{color:#ffffff;text-decoration:none;background-color:#ff1493;}
+.demoBox{
+	margin: 0 0 10px 0;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box; 
+}
+button{
+	font-size:240%;
+	width:100px;
+	margin: 5px 0 0 0;
+	cursor: pointer;
+	background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#fff));
+	background: -moz-linear-gradient(top, #ccc, #fff);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #cccccc;
+	-moz-box-shadow: 2px 2px 5px #cccccc;
+}
+button:hover{
+	background-color:#ff1493;
+	background: -webkit-gradient(linear, center top, center bottom, from(#ff1493), to(#fff));
+	background: -moz-linear-gradient(top, #ff1493, #fff);
+}
+.demo{
+	border: 5px solid #222;
+	padding: 10px;
+	font-size: 360%;
+	line-height: 1.5;
+	background:#fff;
+	-webkit-box-shadow: 2px 2px 5px #cccccc;
+	-moz-box-shadow: 2px 2px 5px #cccccc;
+	overflow: auto;
+}
+.demo:hover{
+	border: 5px solid #ff1493;
+}
+.demo a{color:#202020;text-decoration:none;}
+.demo a:link{color:#202020;text-decoration:none;}
+.demo a:visited{color:#202020;text-decoration:none;}
+.demo a:hover{color:#202020;text-decoration:none;}
+.demo a:active{color:#202020;text-decoration:none;}
+.demo p{
+	line-height:1.5;
+}
+.demo ul{
+	margin: 0 30px 10px 0;
+	list-style-type:none;
+}
+.demo ul ul{
+	margin: 0 30px 0 1em;
+}
+.demo .box{
+	display:box;
+	display: -webkit-box;
+	display: -moz-box; 
+}
+.demo .column3{
+	width:480px;
+	margin:0 15px 0 0;
+}
+.demo table{
+	border-top: 3px solid #ccc;
+	border-left: 3px solid #ccc;
+	border-collapse:collapse;
+}
+.demo table td{
+	border-right: 3px solid #ccc;
+	border-bottom: 3px solid #ccc;
+}
+.demo .tBorder{
+	text-decoration: underline !important;
+}
+.demo .sampleBox{
+	background:#ff1493;
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:50px;
+	left:15px;
+}
+pre{
+	clear:both;
+	font-family:monospace;
+	margin: 0 0 30px 0;
+	padding: 10px;
+	border: 5px solid #999999;
+	background: #202020;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #999999;
+	line-height: 1.5;
+	-moz-box-shadow: 2px 2px 5px #999999;
+	-webkit-box-shadow: 2px 2px 5px #999999;
+}
+pre:hover{
+	border: 5px solid #ff1493;
+}
+pre code{
+	font-size: 400%;
+	font-family:monospace;
+	word-wrap: break-word;
+}
+pre textarea{
+	font-family:monospace;
+	width: 100%;
+	font-size: 100%;
+	border:0;
+	background: #202020;
+	color:#FFFFFF;
+	line-height: 1.5;
+	vertical-align: bottom;
+	padding: 10px;
+}
+pre textarea:focus{
+	outline: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #404040;
+}
+.mb30{
+	margin-bottom:30px !important;
+}
+.inline{
+	display: inline !important;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>DEMO 20</title>
+<link rel="stylesheet" href="common/css/styles.css" />
+<script src="common/js/jquery-1.8.2.min.js"></script>
+<script src="common/js/function.js"></script>
+<body>
+<header>
+<div>
+<h1><a href="./">DEMO 20</a></h1>
+<ul>
+<li><a href="demo19.html">PREV</a></li>
+<li><a href="demo21.html">NEXT</a></li>
+</ul>
+</div>
+</header>
+
+<div id="container">
+
+<h2 class="active">E:not(s)</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode">&lt;ul&gt;
+&lt;li&gt;サンプルーテキストA1&lt;/li&gt;
+&lt;li&gt;サンプルーテキストA2&lt;/li&gt;
+&lt;li&gt;サンプルーテキストA3&lt;/li&gt;
+&lt;li&gt;サンプルーテキストA4&lt;/li&gt;
+&lt;li&gt;サンプルーテキストA5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;サンプルーテキストB1&lt;/li&gt;
+&lt;li&gt;サンプルーテキストB2&lt;/li&gt;
+&lt;li&gt;サンプルーテキストB3&lt;/li&gt;
+&lt;li&gt;サンプルーテキストB4&lt;/li&gt;
+&lt;li&gt;サンプルーテキストB5&lt;/li&gt;
+&lt;li&gt;サンプルーテキストB6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;サンプルーテキストC1&lt;/li&gt;
+&lt;li&gt;サンプルーテキストC2&lt;/li&gt;
+&lt;li&gt;サンプルーテキストC3&lt;/li&gt;
+&lt;li&gt;サンプルーテキストC4&lt;/li&gt;
+&lt;li&gt;サンプルーテキストC5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.demo ul li:nth-child(2n):not(:nth-child(2)){
+&nbsp;&nbsp;&nbsp;&nbsp;color:#ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color:#ff0000;
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="box"> 
+<ul>
+<li>サンプルーテキストA1</li>
+<li>サンプルーテキストA2</li>
+<li>サンプルーテキストA3</li>
+<li>サンプルーテキストA4</li>
+<li>サンプルーテキストA5</li>
+</ul>
+<ul>
+<li>サンプルーテキストB1</li>
+<li>サンプルーテキストB2</li>
+<li>サンプルーテキストB3</li>
+<li>サンプルーテキストB4</li>
+<li>サンプルーテキストB5</li>
+<li>サンプルーテキストB6</li>
+</ul>
+<ul>
+<li>サンプルーテキストC1</li>
+<li>サンプルーテキストC2</li>
+<li>サンプルーテキストC3</li>
+<li>サンプルーテキストC4</li>
+<li>サンプルーテキストC5</li>
+</ul>
+</div>
+</div>
+</section>
+
+</div>
+
+</body>
+</html>
