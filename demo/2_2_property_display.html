@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>PROPERTY DEMO：display2</title>
+<link rel="stylesheet" href="css/styles.css" />
+<body>
+  <header class="l-header">
+    <div class="l-inner">
+      <h1>PROPERTY DEMO：display2</h1>
+      
+      <ul>
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div>
+  </header>
+  <section class="l-main">
+    <div class="l-inner">
+
+<h2 class="active">display2</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.parentBlock {
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 20px;
+}
+.inline span, .block span, .inline-block span {
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100px;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ccc;
+}
+.inline span {
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline;
+}
+.block span {
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+}
+.inline-block span {
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="inline parentBlock">
+  <span>inline</span>
+  <span>inline</span>
+  <span>inline</span>
+  <span>inline</span>
+  <span>inline</span>
+</div>
+<div class="block parentBlock">
+  <span>block</span>
+  <span>block</span>
+  <span>block</span>
+  <span>block</span>
+  <span>block</span>
+</div>
+<div class="inline-block parentBlock">
+  <span>inline-block</span>
+  <span>inline-block</span>
+  <span>inline-block</span>
+  <span>inline-block</span>
+  <span>inline-block</span>
+</div>
+</div>
+</section>
+
+    </div>
+  </section>
+<script src="js/all.js"></script>
+</body>
+</html>
