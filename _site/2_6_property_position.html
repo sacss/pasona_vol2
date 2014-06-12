@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<title>PROPERTY DEMO：float</title>
+<title>PROPERTY DEMO：position</title>
 <link rel="stylesheet" href="css/styles.css" />
 <body>
   <header class="l-header">
     <div class="l-inner">
-      <h1>PROPERTY DEMO：float</h1>
+      <h1>PROPERTY DEMO：position</h1>
       
       <ul>
         <li><a href="../">一覧に戻る</a></li>
@@ -18,7 +18,7 @@
   <section class="l-main">
     <div class="l-inner">
 
-<h2 class="active">float</h2>
+<h2 class="active">position</h2>
 
 <section>
 <h3>HTML</h3>
@@ -27,28 +27,27 @@
 
 <section>
 <h3>CSS</h3>
-<pre><code id="cssCode">#column {
+<pre><code id="cssCode">#pos {
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #00ff00;
-&nbsp;&nbsp;&nbsp;&nbsp;padding-bottom: 150px;
-
+&nbsp;&nbsp;&nbsp;&nbsp;position:relative;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 300px;
 }
-#leftColumn {
-&nbsp;&nbsp;&nbsp;&nbsp;float: left;
-&nbsp;&nbsp;&nbsp;&nbsp;width: 50%;
-&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+#block01 {
+&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;left: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;width:465px;
+&nbsp;&nbsp;&nbsp;&nbsp;height:100px;
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #ff0000;
 }
-#rigthColumn {
-&nbsp;&nbsp;&nbsp;&nbsp;float: left;
-&nbsp;&nbsp;&nbsp;&nbsp;width: 50%;
-&nbsp;&nbsp;&nbsp;&nbsp;height: 200px;
+#block02 {
+&nbsp;&nbsp;&nbsp;&nbsp;position:absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 100px;
+&nbsp;&nbsp;&nbsp;&nbsp;left: 200px;
+&nbsp;&nbsp;&nbsp;&nbsp;width:465px;
+&nbsp;&nbsp;&nbsp;&nbsp;height:100px;
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #0000ff;
-}
-/* #column:after {
-&nbsp;&nbsp;&nbsp;&nbsp;content: '';
-&nbsp;&nbsp;&nbsp;&nbsp;display: block;
-&nbsp;&nbsp;&nbsp;&nbsp;clear: both;
-}*/</code></pre>
+}</code></pre>
 </section>
 
 <section>
@@ -57,9 +56,9 @@
 <button id="run">Run</button>
 </div>
 <div class="demo">
-<div id="column">
-<div id="leftColumn"></div>
-<div id="rigthColumn"></div>
+<div id="pos">
+<div id="block01"></div>
+<div id="block02"></div>
 </div>
 </div>
 </section>
