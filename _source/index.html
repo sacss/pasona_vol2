@@ -48,3 +48,12 @@ categories: top
   {% endif %}
 {% endfor %}
 </ul>
+
+<h2 class="mod-list-head">様々な例</h2>
+<ul class="mod-list">
+{% for item in site.pages %}
+  {% if item.categories == "example" %}
+  <li><a href="{{ item.path }}">{{ item.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

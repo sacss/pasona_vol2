@@ -2,6 +2,11 @@
   'use strict';
 
   var runSwitch = false;
+  if($('#sampleStyle').length > 0) {
+    runSwitch = true;
+    $('#run').text('Break');
+    $('#cssCode').text($.trim($('#sampleStyle').html()));
+  }
   $('#run').on('click', function () {
     if(runSwitch) {
       $('style').remove();
@@ -32,7 +37,7 @@
     }
   });
 
-  $('#htmlCode').text($.trim($('.demo').html()));
+  $('#htmlCode').text($.trim($('.demo').html().replace(/&gt;/g,'>').replace(/&lt;/g,'<')));
 
   $('h3:not(#demoTitle)').on('click', function () {
     $(this).next().slideToggle();
