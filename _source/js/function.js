@@ -37,8 +37,9 @@
     }
   });
 
-  $('#htmlCode').text($.trim($('.demo').html().replace(/&gt;/g,'>').replace(/&lt;/g,'<')));
-
+  if($('#htmlCode').length > 0) {
+    $('#htmlCode').text($.trim($('.demo').html().replace(/&gt;/g,'>').replace(/&lt;/g,'<')));
+  }
   $('h3:not(#demoTitle)').on('click', function () {
     $(this).next().slideToggle();
   });
