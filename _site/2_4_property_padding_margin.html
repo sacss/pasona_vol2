@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>PROPERTY DEMO：padding / margin</title>
+<link rel="stylesheet" href="css/styles.css" />
+<body>
+  <header class="l-header">
+    <div class="l-inner">
+      <h1>PROPERTY DEMO：padding / margin</h1>
+      
+      <ul>
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div>
+  </header>
+  <section class="l-main">
+    <div class="l-inner">
+
+<h2 class="active">padding / margin</h2>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode">.w300 {
+&nbsp;&nbsp;&nbsp;&nbsp;width: 300px;
+}
+.h300 {
+&nbsp;&nbsp;&nbsp;&nbsp;height: 300px;
+}
+.m50 {
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 50px;
+}
+.p50 {
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 50px;
+}
+.bg-gray {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ccc;
+}
+.inline-block {
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
+}</code></pre>
+</section>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">DEMO</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="mb30">
+  <div class="w300 h300 bg-gray m50">block</div>
+</div>
+<div class="mb30">
+  <div class="w300 h300 bg-gray p50">block</div>
+</div>
+<div class="mb30">
+  <div class="w300 h300 bg-gray m50 p50">block</div>
+</div>
+<div class="mb30">
+  <span class="w300 h300 bg-gray m50">inline</span>
+</div>
+<div class="mb30">
+  <span class="w300 h300 bg-gray p50">inline</span>
+</div>
+<div class="mb30">
+  <span class="w300 h300 bg-gray m50 p50">inline</span>
+</div>
+<div class="mb30">
+  <div class="w300 h300 bg-gray inline-block m50">inline-block</div>
+</div>
+<div class="mb30">
+  <div class="w300 h300 bg-gray inline-block p50">inline-block</div>
+</div>
+<div class="mb30">
+  <div class="w300 h300 bg-gray inline-block m50 p50">inline-block</div>
+</div>
+</div>
+</section>
+
+    </div>
+  </section>
+<script src="js/all.js"></script>
+</body>
+</html>

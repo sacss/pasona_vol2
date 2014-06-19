@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>Example： text and text block</title>
+<link rel="stylesheet" href="css/styles.css" />
+<body>
+  <header class="l-header">
+    <div class="l-inner">
+      <h1>Example： text and text block</h1>
+      
+      <ul>
+        <li><a href="../">一覧に戻る</a></li>
+      </ul>
+      
+    </div>
+  </header>
+  <section class="l-main">
+    <div class="l-inner">
+
+<style id="sampleStyle">
+.common-block {
+  padding: 15px;
+  background-color: #2c3e50;
+}
+.common-block:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.common-block p{
+  color: #fff;
+}
+.column > div {
+  float: left;
+  /* width: 50%; */
+}
+/*.column-left p{
+  padding-right: 15px;
+}
+.column-right p{
+  padding-left: 15px;
+}*/
+</style>
+
+<h2 class="active">text and text block</h2>
+
+<section>
+<div class="demoBox">
+<h3 id="demoTitle">Example</h3>
+<button id="run">Run</button>
+</div>
+<div class="demo">
+<div class="common-block column">
+  <div class="column-left"><p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p></div>
+  <div class="column-right"><p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<h3>HTML</h3>
+<pre><code id="htmlCode"></code></pre>
+</section>
+
+<section>
+<h3>CSS</h3>
+<pre><code id="cssCode"></code></pre>
+</section>
+
+    </div>
+  </section>
+<script src="js/all.js"></script>
+</body>
+</html>
